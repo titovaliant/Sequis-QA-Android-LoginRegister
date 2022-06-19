@@ -36,7 +36,7 @@ ${Login-GMAIL-ACCOUNT}             id=com.google.android.gms:id/container
 ${Login-FACEBOOK-POPUP}            //android.view.View[@text='Log in to your Facebook account to connect to Sequis']
 ${Login-SUMBITFB-BUTTON}            //android.widget.Button[@text='Log In']
 ${Login-EMAILFB-FIELD}              //android.widget.EditText
-${Login-PASSWORDFB-FIELD}           //android.widget.EditText
+${Login-PASSWORDFB-FIELD}           //android.widget.EditText[@text="Facebook password"]
 
 #REGISTER Page
 ${REGISTER-DAFTAR-TEXT}            //android.widget.TextView[@text='Daftar']
@@ -127,7 +127,7 @@ GO TO PROFILE PAGE
     Click Element                                   ${MAIN-PINCLOSE-BUTTON}
 
 VERIFY PROFILE PAGE
-    Wait Until Page Contains Element                ${MAIN-ICON-INBOX}
+    Wait Until Page Contains Element                ${MAIN-ICON-INBOX}              timeout=20
     Wait Until Page Contains Element                ${MAIN-ICON-SETTINGS}
 
 Click the logout button
