@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.3 on win32)" generated="20220619 16:54:24.222" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginGmailButton" source="D:\SEQUIS\android_project\Tests\LoginGmailButton.robot">
+<test id="s1-t1" name="Landing Page" line="6">
+<kw name="Open Sequiz App On Android" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=com.sequis.neu.polisku</arg>
+<arg>appActivity=com.sequis.neu.polisku.SplashScreenActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220619 16:54:24.799" endtime="20220619 16:54:39.607"/>
+</kw>
+<status status="PASS" starttime="20220619 16:54:24.798" endtime="20220619 16:54:39.607"/>
+</kw>
+<kw name="Landing Page" library="config">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${LANDING-SplashLogo}</arg>
+<arg>timeout=20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220619 16:54:39.610" endtime="20220619 16:54:40.363"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${LANDING-SequizLogo}</arg>
+<arg>timeout=20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220619 16:54:40.363" endtime="20220619 16:54:49.859"/>
+</kw>
+<status status="PASS" starttime="20220619 16:54:39.609" endtime="20220619 16:54:49.859"/>
+</kw>
+<status status="PASS" starttime="20220619 16:54:24.796" endtime="20220619 16:54:49.860"/>
+</test>
+<test id="s1-t2" name="Click Gmail Button" line="10">
+<kw name="Click Gmail Button" library="config">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${LANDING-GMAIL-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220619 16:54:49.877" level="INFO">Clicking element 'id=com.sequis.neu.polisku:id/containerGoogle'.</msg>
+<status status="PASS" starttime="20220619 16:54:49.865" endtime="20220619 16:54:50.050"/>
+</kw>
+<status status="PASS" starttime="20220619 16:54:49.864" endtime="20220619 16:54:50.051"/>
+</kw>
+<status status="PASS" starttime="20220619 16:54:49.863" endtime="20220619 16:54:50.052"/>
+</test>
+<test id="s1-t3" name="Choose Gmail Account" line="13">
+<kw name="Verify Gmail Popup Is Displayed" library="config">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${Login-GMAIL-POPUP}</arg>
+<arg>timeout=20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220619 16:54:50.058" endtime="20220619 16:54:53.541"/>
+</kw>
+<status status="PASS" starttime="20220619 16:54:50.057" endtime="20220619 16:54:53.542"/>
+</kw>
+<kw name="Choose Gmail Account" library="config">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Login-GMAIL-ACCOUNT}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220619 16:54:53.549" level="INFO">Clicking element 'id=com.google.android.gms:id/container'.</msg>
+<status status="PASS" starttime="20220619 16:54:53.543" endtime="20220619 16:54:53.714"/>
+</kw>
+<status status="PASS" starttime="20220619 16:54:53.543" endtime="20220619 16:54:53.714"/>
+</kw>
+<status status="PASS" starttime="20220619 16:54:50.055" endtime="20220619 16:54:53.716"/>
+</test>
+<test id="s1-t4" name="Verify Login Gmail Is Successful" line="17">
+<kw name="GO TO PROFILE PAGE" library="config">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${MAIN-PIN-IMAGE}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20220619 16:54:59.786" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="1794"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.sequis.neu.polisku" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.sequis.neu.polisku" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.sequis.neu.polisku" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
+        &lt;android.widget.FrameLayout index="0" package="com.sequis.neu.polisku" class="android.widget.FrameLayout" text="" resource-id="com.sequis.neu.polisku:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.sequis.neu.polisku" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
+            &lt;android.widget.FrameLayout index="0" package="com.sequis.neu.polisku" class="android.widget.FrameLayout" text="" resource-id="com.sequis.neu.polisku:id/container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
+              &lt;android.view.ViewGroup index="0" package="com.sequis.neu.polisku" class="android.view.ViewGroup" text="" resource-id="com.sequis.neu.polisku:id/coordinator" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,63][1080,1794]" displayed="true"&gt;
+                &lt;android.view.View index="0" package="com.sequis.neu.polisku" class="android.view.View" text="" resource-id="com.sequis.neu.polisku:id/touch_outside" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,63][1080,1794]" displayed="true" /&gt;
+                &lt;android.widget.FrameLayout index="1" package="com.sequis.neu.polisku" class="android.widget.FrameLayout" text="" resource-id="com.sequis.neu.polisku:id/design_bottom_sheet" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,96][1080,1794]" displayed="true"&gt;
+                  &lt;android.view.ViewGroup index="0" package="com.sequis.neu.polisku" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,96][1080,1794]" displayed="true"&gt;
+                    &lt;android.widget.ImageView index="0" package="com.sequis.neu.polisku" class="android.widget.ImageView" text="" resource-id="com.sequis.neu.polisku:id/close" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[954,117][1059,222]" displayed="true" /&gt;
+                    &lt;android.widget.ImageView index="1" package="com.sequis.neu.polisku" class="android.widget.ImageView" text="" resource-id="com.sequis.neu.polisku:id/imagePin" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[265,358][816,909]" displayed="true" /&gt;
+                    &lt;android.widget.TextView index="2" package="com.sequis.neu.polisku" class="android.widget.TextView" text="Tingkatkan Keamanan Akun" resource-id="com.sequis.neu.polisku:id/tingkatkanLabel" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,935][1038,1004]" displayed="true" /&gt;
+                    &lt;android.widget.TextView index="3" package="com.sequis.neu.polisku" class="android.widget.TextView" text="Gunakan PIN untuk menjaga keamanan akun Anda. PIN akan diminta setiap kali Anda masuk aplikasi." resource-id="com.sequis.neu.polisku:id/tingkatkanSubLabel" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,1046][1038,1148]" displayed="true" /&gt;
+                    &lt;android.widget.Button index="4" package="com.sequis.neu.polisku" class="android.widget.Button" text="BUAT PIN" resource-id="com.sequis.neu.polisku:id/buatPin" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,1568][1038,1731]" displayed="true" /&gt;
+                  &lt;/android.view.ViewGroup&gt;
+                &lt;/android.widget.FrameLayout&gt;
+              &lt;/android.view.ViewGroup&gt;
+            &lt;/android.widget.FrameLayout&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.FrameLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220619 16:55:00.588" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220619 16:54:59.787" endtime="20220619 16:55:00.588"/>
+</kw>
+<msg timestamp="20220619 16:55:00.590" level="FAIL">Element locator 'id=com.sequis.neu.polisku:id/imagePin' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20220619 16:54:53.723" endtime="20220619 16:55:00.590"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${MAIN-PINCLOSE-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220619 16:55:00.591" endtime="20220619 16:55:00.591"/>
+</kw>
+<status status="FAIL" starttime="20220619 16:54:53.722" endtime="20220619 16:55:00.593"/>
+</kw>
+<kw name="VERIFY PROFILE PAGE" library="config">
+<status status="NOT RUN" starttime="20220619 16:55:00.594" endtime="20220619 16:55:00.594"/>
+</kw>
+<status status="FAIL" starttime="20220619 16:54:53.720" endtime="20220619 16:55:00.596">Element locator 'id=com.sequis.neu.polisku:id/imagePin' did not match any elements after 5 seconds</status>
+</test>
+<status status="FAIL" starttime="20220619 16:54:24.227" endtime="20220619 16:55:00.600"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="LoginGmailButton">LoginGmailButton</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
