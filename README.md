@@ -1,0 +1,61 @@
+# Sequis-QA-Android-LoginRegister
+Automation Testing for Android Sequis Apps using Robot Framework, Python and Appium Library. Works on Emulator Android Devices
+
+Prepared by:
+**Tito Valiant Muhammad - Tester Engineer Candidate**
+
+### Concepts
+
+1). Built-in Frameworks
+    
+    Appium
+
+2). Customized/User defined frameworks
+
+    Robot Framework
+
+## 1. Requirements and Tools
+
+In order to utilise this project you need to have the following installed locally:
+
+* Python
+* Chrome and Chromedriver
+*Rrobotframework-Appiumlibrary
+    
+    On Terminal use this command (inside the Sequis folder):
+    ```
+    $ pip install robotframework-appiumlibrary
+    ```
+    
+## 2. Reporting
+
+Reports, Logs for each module are written into their respective `/Output` directories after a successful run with HTML Reports format and Log Test Result.
+
+## 3. Usage/How to Run
+
+The project is broken into separate Folder and Package.
+
+### Register Email TestCase:
+To run this test case, navigate to `/Test` directory and run:
+
+`$ robot -d Output/Register Tests/RegisterEmail.robot`
+
+*NOTE*: They will also generate a HTML report in `Output\Register`
+
+### Login Gmail Button TestCase:
+To run this test case, navigate to `/Test` directory and run:
+
+`$ robot -d Output/Login Tests/LoginGmailButton.robot`
+
+*NOTE*: They will also generate a HTML report in `Output\Login`
+
+### Register Phone TestCase:
+To run this test case, navigate to `/Test` directory and run:
+
+`$ robot -d Output/Register Tests/RegisterPhone.robot`
+
+*NOTE*: They will also generate a HTML report in `Output\Register`
+
+### DEMO VIDEO:
+
+<a href="https://github.com/titovaliant/Sequis-QA-Android-LoginRegister/blob/c135fe0bed47a7f77b208d8b812ac175f6be2c06/Sequis-Android-Login-register.mp4">Demo Video - Sequis Android Apps - Tito</a>
