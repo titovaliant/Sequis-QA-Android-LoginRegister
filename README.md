@@ -29,7 +29,8 @@ In order to utilise this project you need to have the following installed locall
     
 ## 2. Reporting
 
-Reports, Logs for each module are written into their respective `/Output` directories after a successful run with HTML Reports format and Log Test Result.
+Reports, Logs for each module are written into their respective `/Output` directories after a successful run 
+with HTML Reports format and Data Log Test Result.
 
 ## 3. Usage/How to Run
 
