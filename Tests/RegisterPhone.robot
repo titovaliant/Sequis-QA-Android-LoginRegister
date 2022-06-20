@@ -17,3 +17,5 @@ INPUT REGISTER PHONE USER
 GO TO VERIFY PAGE
     Verify OTP Phone Register Page
 
+Close Application
+    Close Sequiz App

@@ -15,3 +15,6 @@ INPUT REGISTER EMAIL USER
 
 GO TO VERIFY PAGE
     Verify OTP Email Register Page
+
+Close Application
+    Close Sequiz App

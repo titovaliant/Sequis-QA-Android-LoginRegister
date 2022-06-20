@@ -12,8 +12,20 @@ Click Facebook Button
 
 Navigate to Facebook Page
     Wait Facebook Page Displayed
-    Input Email FB Address             ${USER2-DETAILS}[email]
-    Input Password FB                  ${USER2-DETAILS}[password]
 
 Login Button
-    Click Login Button
+    Click Continue FB
+
+Verify Login FB Is Successful
+    GO TO PROFILE PAGE
+    VERIFY PROFILE PAGE
+
+Logout Account
+    DETAIL ACCOUNT
+    Click the logout button
+
+BACK TO LANDING PAGE
+    GO TO LANDING PAGE
+    
+Close Application
+    Close Sequiz App

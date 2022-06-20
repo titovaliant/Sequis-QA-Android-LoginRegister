@@ -1,3 +1,3 @@
 *** Variables ***
 ${PASSWORD}         Admin123
-${PASSWORD2}        akutito
+${PASSWORD2}        @Admin123

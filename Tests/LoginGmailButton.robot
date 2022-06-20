@@ -17,3 +17,13 @@ Choose Gmail Account
 Verify Login Gmail Is Successful
     GO TO PROFILE PAGE
     VERIFY PROFILE PAGE
+
+Logout Account
+    DETAIL ACCOUNT
+    Click the logout button
+
+BACK TO LANDING PAGE
+    GO TO LANDING PAGE
+
+Close Application
+    Close Sequiz App

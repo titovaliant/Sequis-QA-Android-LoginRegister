@@ -6,3 +6,6 @@ Resource        ../Resources/config.robot
 Landing Page
     Open Sequiz App On Android
     Landing Page
+
+Close Application
+    Close Sequiz App
