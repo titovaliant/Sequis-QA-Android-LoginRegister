@@ -35,27 +35,34 @@ Reports, Logs for each module are written into their respective `/Output` direct
 
 The project is broken into separate Folder and Package.
 
+### All Login & Register TestCase:
+To run the all modules test case, navigate to `/Test` directory and run:
+
+`$ robot -d Output/AllTestCase Tests`
+
+*NOTE*: They will also generate a HTML report and data Log in `Output/AllTestCase`
+
 ### Register Email TestCase:
 To run this test case, navigate to `/Test` directory and run:
 
 `$ robot -d Output/Register Tests/RegisterEmail.robot`
 
-*NOTE*: They will also generate a HTML report in `Output\Register`
+*NOTE*: They will also generate a HTML report and data Log in `Output\Register`
 
 ### Login Gmail Button TestCase:
 To run this test case, navigate to `/Test` directory and run:
 
 `$ robot -d Output/Login Tests/LoginGmailButton.robot`
 
-*NOTE*: They will also generate a HTML report in `Output\Login`
+*NOTE*: They will also generate a HTML report and data Log in `Output\Login`
 
 ### Register Phone TestCase:
 To run this test case, navigate to `/Test` directory and run:
 
 `$ robot -d Output/Register Tests/RegisterPhone.robot`
 
-*NOTE*: They will also generate a HTML report in `Output\Register`
+*NOTE*: They will also generate a HTML report and data Log in `Output\Register`
 
 ### DEMO VIDEO:
 
-<a href="https://github.com/titovaliant/Sequis-QA-Android-LoginRegister/blob/c135fe0bed47a7f77b208d8b812ac175f6be2c06/Sequis-Android-Login-register.mp4">Demo Video - Sequis Android Apps - Tito</a>
+<a href="https://github.com/titovaliant/Sequis-QA-Android-LoginRegister/blob/d2c43bad2f0d87888650b58ff6adcc55ee859c4f/Demo%20Video%20Sequis%20QA%20Android%20Apps.mp4">Demo Video - Sequis Android Apps - Tito</a>
