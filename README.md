@@ -1,5 +1,6 @@
 # Sequis-QA-Android-LoginRegister
-Automation Testing for Android Sequis Apps using Robot Framework, Python and Appium Library. Works on Emulator Android Devices
+Automation Testing for Login and Register Page in Android Sequis Apps 
+using Robot Framework, Python and Appium Library. Works on Emulator Android Devices
 
 Prepared by:
 **Tito Valiant Muhammad - Tester Engineer Candidate**
@@ -34,7 +35,13 @@ with HTML Reports format and Data Log Test Result.
 
 ## 3. Usage/How to Run
 
-The project is broken into separate Folder and Package.
+The project is broken into separate Folder.
+
+### Run the Appium Server:
+Before Run the TestCase you should run the appium server first.
+Open Command Prompt on your computer, then write this code and ENTER:
+
+`$ appium --allow-cors`
 
 ### All Login & Register TestCase:
 To run the all modules test case, navigate to `/Test` directory and run:
